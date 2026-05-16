@@ -10,7 +10,7 @@ import { seedFromMnemonic } from '@algorandfoundation/algokit-utils/algo25';
 config();
 
 const avmMnemonic = process.env.AVM_MNEMONIC as string;
-const url = 'https://x402.goplausible.xyz/examples/weather';
+const url = 'http://localhost:4021/weather';
 
 async function main(): Promise<void> {
   const secretKey = await getSecretKeyFromMnemonic(avmMnemonic);
